@@ -1,4 +1,6 @@
 {
+    "host": "igdr-webrtc.herokuapp.com",
+    "port": 443,
     "https": true,
     "injectChanges": true,
     "codeSync": true
