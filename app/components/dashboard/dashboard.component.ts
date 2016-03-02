@@ -39,7 +39,7 @@ export class DashboardComponent {
         });
 
         // Listen to incoming calls
-        this.peer.on('stream', function (call) {
+        this.peer.on('call', function (call) {
             // ask the user if he wants to answer the stream
             _this.initSelfVideo(function () {
                 call.answer(_this.stream.localStream);
@@ -53,10 +53,6 @@ export class DashboardComponent {
     }
 
     callTo(id):void {
-        if (this.stream.inProgress) {
-            this.stream.call.close();
-        }
-
         this.stream.peerId = id;
 
         var _this = this;
