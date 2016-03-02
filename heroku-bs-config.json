@@ -1,0 +1,5 @@
+{
+    "https": true,
+    "injectChanges": true,
+    "codeSync": true
+}
