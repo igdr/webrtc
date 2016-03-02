@@ -61,7 +61,7 @@ export class DashboardComponent {
 
         var _this = this;
         this.initSelfVideo(function () {
-            _this.handleCall(_this.peer.stream(_this.stream.peerId, _this.stream.localStream));
+            _this.handleCall(_this.peer.call(_this.stream.peerId, _this.stream.localStream));
         });
     }
 
