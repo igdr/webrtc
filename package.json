@@ -6,6 +6,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
+    "heroku": "http-server -p 443",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
     "typings": "typings"
   },
@@ -14,13 +15,14 @@
     "angular2": "2.0.0-beta.7",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
+    "http-server": "^0.9.0",
+    "lite-server": "^2.1.0",
     "ng2-bootstrap": "^1.0.3",
     "peerjs": "^0.3.14",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "systemjs": "0.19.22",
     "typings": "^0.6.8",
-    "zone.js": "0.5.15",
-    "lite-server": "^2.1.0"
+    "zone.js": "0.5.15"
   }
 }
