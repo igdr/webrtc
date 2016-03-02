@@ -1,0 +1,10 @@
+[{
+    "text": "todo 1",
+    "completed": false
+}, {
+    "text": "todo 2",
+    "completed": true
+}, {
+    "text": "todo 3",
+    "completed": true
+}]

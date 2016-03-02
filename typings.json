@@ -1,0 +1,7 @@
+{
+  "ambientDependencies": {
+    "MediaStream": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/webrtc/MediaStream.d.ts",
+    "RTCPeerConnection": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/webrtc/RTCPeerConnection.d.ts",
+    "peerjs": "github:DefinitelyTyped/DefinitelyTyped/peerjs/peerjs.d.ts#5f2a6b0dc360fdbd09a9b8e16ad3e6aad919837a"
+  }
+}

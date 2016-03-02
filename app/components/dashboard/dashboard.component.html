@@ -1,0 +1,49 @@
+<header>
+	Header...
+</header>
+
+<div class="pure-g">
+	<h3>Status: {{ stream.statusMsg }}</h3>
+	<h3>Error: {{ stream.error }}</h3>
+	<h3>Source Url: {{ stream.localVdoURL }}</h3>
+	<h3>Peer Url: {{ stream.peerVdoURL }}</h3>
+	<!-- Video area -->
+	<div class="pure-u-2-3" id="video-container">
+		<video src="{{ stream.peerVdoURL }}" autoplay></video>
+		<video src="{{ stream.localVdoURL }}" muted="true" autoplay></video>
+	</div>
+
+	<!-- Steps -->
+	<div class="pure-u-1-3">
+		<!--<h2>PeerJS Video Chat</h2>-->
+		<!--&lt;!&ndash; Get local audio/video stream &ndash;&gt;-->
+		<!--<div id="step1">-->
+			<!--<p>Please click `allow` on the top of the screen so we can access your webcam and microphone for callcall.</p>-->
+			<!--<div id="step1-error">-->
+				<!--<p>Failed to access the webcam and microphone. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</p>-->
+				<!--<a href="#" class="pure-button pure-button-error" id="step1-retry">Try again</a>-->
+			<!--</div>-->
+		<!--</div>-->
+
+		<!-- Make calls to others -->
+		<div id="step2">
+			<p>Your id: <span id="my-id" style="font-weight: bold;">{{peer.id}}</span></p>
+			<p>Share this id with others so they can call you.</p>
+			<h3>Make a call</h3>
+			<div class="pure-form">
+				<input type="text" #useId placeholder="Call user id...">
+				<a (click)="callTo(useId.value)" class="pure-button pure-button-success">Call</a>
+			</div>
+		</div>
+
+		<!--&lt;!&ndash; Call in progress &ndash;&gt;-->
+		<!--<div id="step3">-->
+			<!--<p>Currently in call with <span id="their-id">{{ call.peerId }}</span></p>-->
+			<!--<p><a (click)="endCall()" class="pure-button pure-button-error" id="end-call">End call</a></p>-->
+		<!--</div>-->
+	</div>
+</div>
+
+<footer>
+	Footer...
+</footer>
