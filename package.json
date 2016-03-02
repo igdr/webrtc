@@ -7,8 +7,8 @@
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "heroku": "npm run lite -c heroku-bs-config.js",
-    "typings": "typings"
+    "typings": "typings",
+    "heroku": "npm run lite --config=heroku-bs-config.js"
   },
   "license": "ISC",
   "dependencies": {
