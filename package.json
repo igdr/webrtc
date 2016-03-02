@@ -6,7 +6,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "heroku": "http-server -p 443",
+    "heroku": "http-server --ssl",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
     "typings": "typings"
   },
